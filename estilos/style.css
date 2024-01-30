@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+:root{
+    --cor-primaria: #7700CB;
+    --cor-secundaria: #DD91EF;
+    --cor-terciaria: #FFFFE7;
+    --cor-quaternaria: #AB82E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--cor-primaria)
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho h1 {
+    color: var(--cor-terciaria);
+    font-family: "Pixelify Sans", "sans-serif";
+    font-size: 4rem;
+    text-align: center;
+}
+
+.cabecalho img {
+    max-width: 4.38rem;
+    max-height: 4.38rem;
+    width: auto;
+    height: auto;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0% 0% 4%;    
+}
+
+.input-container .input {
+    width: 25rem;
+    height: 20rem;
+}
+
+#input-texto {
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.25rem;
+    color: var(--cor-quaternaria);
+    background: var(--cor-terciaria);
+    box-shadow: 0rem 0.250rem 0.625rem 0rem #230c27;
+    border: none;
+    border-radius: 1.125rem;
+    outline: 0;
+    padding: 0.625rem;
+    font-family: "Arvo", "sans-serif";    
+}
+
+.input p {
+    font-family: "Arvo", "sans-serif";
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    text-align: center;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 1.25rem;
+    width: 22rem;
+    height: 25rem;
+    margin-right: 3%;
+}
+
+#output h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    font-family: "Pixelify Sans", "sans-serif";
+}
+
+#output span {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--cor-terciaria);
+    font-family: "Arvo", "sans-serif";
+}
+
+#output img {
+    max-width: 19rem;
+    max-height: 19rem;
+    width: auto;
+    height: auto;
+    margin: 4% 7%;    
+}
+
+.btn-container button {
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    width: 9.38rem;
+    height: 3.125rem;
+    margin-left: 4%;
+    background-color: var(--cor-secundaria);
+    font-family: "Arvo", "sans-serif";
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cor-quaternaria);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    width: 9.38rem;
+    height: 3.125rem;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    background-color: var(--cor-secundaria);
+    font-family: "Arvo", "sans-serif";
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    border: 2px solid var(--cor-terciaria);
+    background-color: var(--cor-quaternaria);
+    transition: 0.5s all;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-top: 1rem;
+    background: var(--cor-primaria);
+    color: var(--cor-terciaria);
+}
+
+.rodape h3 {
+    font-size: 1rem;
+}
+
+.icons ion-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--cor-terciaria);       
+}
+
+.icons ion-icon:hover {
+    color: var(--cor-quaternaria);
+}
+
+.rodape h3 {
+    font-family: "Arvo", "sans-serif";
+}
+
+@media screen and (max-width:860px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content:center;        
+    }
+
+    .cabecalho h1 {
+      font-size: 1.75rem;
+    }
+
+    .cabecalho img {
+        max-width: 5.625rem;
+        max-height: 2.5rem;
+        width: auto;
+        height: auto;
+    }
+    
+    .input-container input { 
+        width: 25rem;
+        height: 21rem;
+    }
+
+    .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2% 0 0 4%;
+    }
+    
+     #input-texto {
+        width: 25rem;
+        height: 21rem;
+        font-size: 1.25rem;
+    }
+    
+    #output {
+        width: 50%;
+        height: 75%;
+        margin-top: 20%;
+        margin-right: 3%;        
+    }
+
+    .btn-container button {
+        width: 9.375rem;
+        height: 3.125rem;
+        margin-left: 10.5rem;
+        margin-top: 4rem;
+    }
+
+    #output img {
+        max-width: 19rem;
+        max-height: 19rem;
+        width: auto;
+        height: auto;
+        margin: 4% 7%;          
+    }
+
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;        
+        width: auto;
+    }
+}

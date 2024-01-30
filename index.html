@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="imagens/fone-principal.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <main class="main-container">
+        <header class="cabecalho">
+            <img src="imagens/fone-principal.png" alt="fone-principal">
+            <h1>Bem vindo ao C², o seu codificador e decodificador!</h1>
+        </header>
+
+    <div class="input-container">
+        <div class="input">
+            <textarea id="input-texto" placeholder="Digite o seu texto aqui:"></textarea>
+            <p>Atenção: Apenas letras, sem acentos e sem números!</p>
+        </div>
+    <div id="output">
+        <img src="imagens/garota-principal.png" alt="garota principal">
+        <h2>Sua mensagem aparece aqui!</h2>
+        <span>Digite o texto que deseja codificar ou decodificar ao lado ← </span>
+    </div>
+    </div>
+
+    <div class="buttons">
+        <div class="btn-container">
+            <button onclick="codificar()" class="btn-codificar">Codificar</button>
+            <button onclick="decodificar()" class="btn-decodificar">Decodificar</button>
+        </div>
+    </div>
+         
+    </main>
+
+    <footer class="rodape">
+        <div class="icons">
+            <a href="https://github.com/anacarolinams"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/anacsmedeiros/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.instagram.com/anac.msouza/"><ion-icon name="logo-instagram"></ion-icon></a>            
+        </div>
+        <h3>Desenvolvido por Ana Souza</h3>
+    </footer>
+
+    <script src="interacao\script.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
